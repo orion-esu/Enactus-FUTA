@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after{
+    /* margin:0; */
+    padding: 0;
+    /* outline:1px solid tomato; */
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing:border-box;
+    font-size:65%;
+}
+
+body{
+    margin: 0;
+}
+
+:root{
+    /* Colors */
+    --white:#fff;
+    --black:#000;
+    --primary-color:#FEC222;
+    --secondary-color:#04172A;
+    --tertiary-color:#090702;
+
+    /* Font Size */
+    --lrgt-txt:5.2rem;
+    --lrg-txt:4rem;
+    --mdm-txt:3.2rem;
+    --sml-txt:2.4rem;
+
+    /* --header-txt:2.4rem; */
+    --smlt-txt:1.6rem;
+
+    /* Line Height */
+    --line-height:1.6;
+
+    /* Font Family */
+    --lato:
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width:90%;
+    max-width: 1350px;
+    margin:auto;
+}
+
+.nav{
+    background-color:var(--tertiary-color);
+}
+
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__item {
+	position: fixed;
+	background-color: var(--tertiary-color);
+	width: 60%;
+	right: 0;
+	top: 12.12vh;
+	height: 100vh;
+	display: flex;
+	justify-content: right;
+    align-items: center;
+	flex-direction: column;
+	gap: 40px;
+	padding-top: 5rem;
+    
+    transition:all .4s ease-in;
+    clip-path: circle(0% at top right);
+}
+.nav__link{
+    color: #fff;
+    font-size: var(--smlt-txt);
+    font-family: lato;
+}
+
+.nav__item-btn{
+    width: 70%;
+    max-width: 174px;
+    height: 6.3%;
+    background-color: #FEC222;
+    color: #04172A;
+    font-size: var(--smlt-txt);
+    font-weight: 500;
+    border: none;
+    border-radius: 15%;
+}
+.nav__item-btn:hover{
+    color:var(--primary-color);
+    background-color:transparent;
+    border:1px solid var(--white);
+    transition: all .4s ease;
+}
+
+.nav-active{
+    clip-path: circle(150% at top right)
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform:translateX(80px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    gap:17px;
+    position: relative;
+    cursor: pointer;
+}
+.hamburger__line{
+    width:3rem;
+    height: .2rem;
+    background: white;
+    transition: all 0.4s ease;
+
+}
+
+.line-2{
+    display: block;
+    position: absolute;
+    width: 2.5rem;
+    top:10px;
+    right: 0;
+}
+
+.toggle .line-1{
+    transform: rotate(-45deg) translate(-8px,6px);
+}
+
+.toggle .line-2{
+    opacity:0;
+    transform: translateX(10px);
+}
+
+.toggle .line-3{
+    transform: rotate(45deg) translate(-6px, -6px);
+
+}
