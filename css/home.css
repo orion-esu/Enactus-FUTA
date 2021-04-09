@@ -44,6 +44,7 @@ li{
     list-style-type: none;
 }
 
+
 a{
     text-decoration: none;
 }
@@ -84,6 +85,7 @@ img{
 	padding-top: 7rem;
     transition:all .4s ease-in;
     clip-path: circle(0% at top right);
+    z-index: 99;
 }
 
 .nav__link{
@@ -116,33 +118,52 @@ img{
     transform: scaleX(1);
 }
 
-.nav__item-btn{
-    width: 70%;
-    max-width: 174px;
-    height: 8.2%;
-    background-color: #FEC222;
-    color: #04172A;
-    font-size: calc((var(--smlt-txt)) + .2rem);
-    font-weight: 500;
-    border: none;
-    border-radius: .5rem;
-    cursor:pointer;
-    box-shadow: 5px 5px 5px rgba(202, 196, 196, 0.11);
-    /* transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    transition: transform 0.3s ease-in-out; */
+.btn:link,
+.btn:visited{
+    padding: 1.2rem 4rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all .3s ease;
+    position: relative;
 }
 
-.nav__item-btn:hover{
-    color:var(--primary-color);
-    background-color:transparent;
-    border:1px solid var(--white);
-    /* -webkit-transform: scale(1.1) rotate(4deg);
-    transform: scale(1.1) rotate(4deg); */
+.btn-clr{
+    font-size:  calc((var(--smlt-txt)) + .2rem) ;
+    transform: perspective(1px);
+    backface-visibility: hidden;
 }
 
-.nav__item li,
-.nav__item-btn{
+.btn-clr::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: 0% 0%;
+    transition: transform .5s ease;
+    backface-visibility: hidden;
+}
+
+.btn-clr:hover::before{
+    transform: scaleY(1);
+}
+
+.btn:active{
+    transform: translateY(3px);
+}
+
+.btn-animate{
+    animation: navbtnFade .5s ease;
+    animation-fill-mode: backwards;
+}
+
+.nav__item li{
     opacity: 0;
 }
 
@@ -191,7 +212,7 @@ img{
 
 }
 
-.line-2{
+.hamburger__line-2{
     display: block;
     position: absolute;
     width: 2rem;
@@ -199,16 +220,27 @@ img{
     right: 0;
 }
 
-.toggle .line-1{
+.toggle .hamburger__line-1{
     transform: rotate(-45deg) translate(-8px,6px);
 }
 
-.toggle .line-2{
+.toggle .hamburger__line-2{
     opacity:0;
     transform: translateX(10px);
 }
 
-.toggle .line-3{
+.toggle .hamburger__line-3{
     transform: rotate(45deg) translate(-7px, -6px);
 
+}
+.header{
+    position: relative;
+}
+.header .btn{
+    position: absolute;
+    top:20rem;
+    left:5rem;
+    font-size: var(--smlt-txt);
+    background-image: linear-gradient(to top right, var(--tertiary-color), var(--primary-color));
+    color: var(--white);
 }
