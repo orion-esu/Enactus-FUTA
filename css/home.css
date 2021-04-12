@@ -1,143 +1,146 @@
 *,
 *::before,
-*::after{
+*::after {
+    margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 
-html{
-    box-sizing:border-box;
-    font-size:65%;
+html {
+    box-sizing: border-box;
+    font-size: 65%;
 }
 
-body{
-    margin: 0;
+body {   
     font-family: var(--lato);
-    font-family:lato;
+    font-family: lato;
+    /* overflow: hidden; */
 }
 
-:root{
+:root {
     /* Colors */
-    --white:#fff;
-    --black:#000;
-    --primary-color:#FEC222;
-    --secondary-color:#04172A;
-    --tertiary-color:#090702;
+    --white: #fff;
+    --black: #000;
+    --primary-color: #FEC222;
+    --secondary-color: #04172A;
+    --tertiary-color: #090702;
 
     /* Font Size */
-    --lrgt-txt:5.2rem;
-    --lrg-txt:4rem;
-    --mdm-txt:3.2rem;
-    --sml-txt:2.4rem;
+    --lrgt-txt: 5.2rem;
+    --lrg-txt: 4rem;
+    --mdm-txt: 3.2rem;
+    --sml-txt: 2.4rem;
 
     /* --header-txt:2.4rem; */
-    --smlt-txt:1.6rem;
+    --smlt-txt: 1.6rem;
 
     /* Line Height */
-    --line-height:1.6;
+    --line-height: 1.6;
 
     /* Font Family */
-    --lato:'Lato', sans-serif;
+    --lato: 'Lato', sans-serif;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.container{
-    width:90%;
+.container {
+    width: 90%;
     max-width: 1350px;
-    margin:auto;
+    margin: auto;
+    overflow: hidden;
 }
 
-.nav{
-    background-color:var(--tertiary-color);
+.nav {
+    background-color: var(--tertiary-color);
 }
 
 
-.nav__container{
+.nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .nav__item {
-	position: fixed;
-	background-color: var(--tertiary-color);
-	width: 60%;
+    position: fixed;
+    background-color: var(--tertiary-color);
+    width: 60%;
     max-width: 500px;
-	right: 0;
-	top: 12.12vh;
-	height: 100vh;
-	display: flex;
-	justify-content: right;
+    right: 0;
+    top: 12.12vh;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
     align-items: center;
-	flex-direction: column;
-	gap: 40px;
-	padding-top: 7rem;
-    transition:all .4s ease-in;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 7rem;
+    transition: all .4s ease-in;
     clip-path: circle(0% at top right);
     z-index: 99;
 }
 
-.nav__link{
+.nav__link {
     color: #fff;
     font-size: var(--smlt-txt);
     font-family: lato;
 }
 
-.nav__link:hover{
+.nav__link:hover {
     color: var(--primary-color);
 }
 
-.hov-er{
+.hov-er {
     position: relative;
 }
 
-.hov-er::after{
+.hov-er::after {
     content: '';
     display: block;
     position: absolute;
     background-color: var(--primary-color);
     height: .3rem;
     width: 60%;
-    margin-top:.5rem;
+    margin-top: .5rem;
     transform: scaleX(0);
     transition: all 250ms ease-in-out;
 }
 
-.hov-er:hover::after{
+.hov-er:hover::after {
     transform: scaleX(1);
 }
 
 .btn:link,
-.btn:visited{
+.btn:visited {
     padding: 1.2rem 4rem;
     border-radius: 10px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     transition: all .3s ease;
+}
+
+.btn-clr {
+    font-size: calc((var(--smlt-txt)) + .2rem);
+    transform: perspective(1px);
+    backface-visibility: hidden;
     position: relative;
 }
 
-.btn-clr{
-    font-size:  calc((var(--smlt-txt)) + .2rem) ;
-    transform: perspective(1px);
-    backface-visibility: hidden;
-}
-
-.btn-clr::before{
+.btn-clr::before {
     content: '';
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -147,100 +150,264 @@ img{
     transform: scaleY(0);
     transform-origin: 0% 0%;
     transition: transform .5s ease;
-    backface-visibility: hidden;
 }
 
-.btn-clr:hover::before{
+.btn-clr:hover::before {
     transform: scaleY(1);
 }
 
-.btn:active{
+.btn:active {
     transform: translateY(3px);
 }
 
-.btn-animate{
+.btn-animate {
     animation: navbtnFade .5s ease;
     animation-fill-mode: backwards;
 }
 
-.nav__item li{
+.nav__item li {
     opacity: 0;
 }
 
-.nav-active{
+.nav-active {
     clip-path: circle(150% at top right)
 }
 
-@keyframes navLinkFade{
-    0%{
+@keyframes navLinkFade {
+    0% {
         opacity: 0;
-        transform:translateX(100px);
+        transform: translateX(100px);
     }
-    90%{
-        opacity:.5;
+
+    90% {
+        opacity: .5;
         transform: translateX(-10px);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
-@keyframes navbtnFade{
-    from{
+@keyframes navbtnFade {
+    from {
         opacity: 0;
         transform: scale(0);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: scale(1);
     }
 }
 
-.hamburger{
+.hamburger {
     display: flex;
     flex-direction: column;
-    gap:17px;
+    gap: 17px;
     position: relative;
     cursor: pointer;
 }
-.hamburger__line{
-    width:3rem;
+
+.hamburger__line {
+    width: 3rem;
     height: .2rem;
     background: white;
     transition: all 0.4s ease;
 
 }
 
-.hamburger__line-2{
+.hamburger__line-2 {
     display: block;
     position: absolute;
     width: 2rem;
-    top:10px;
+    top: 10px;
     right: 0;
 }
 
-.toggle .hamburger__line-1{
-    transform: rotate(-45deg) translate(-8px,6px);
+.toggle .hamburger__line-1 {
+    transform: rotate(-45deg) translate(-8px, 6px);
 }
 
-.toggle .hamburger__line-2{
-    opacity:0;
+.toggle .hamburger__line-2 {
+    opacity: 0;
     transform: translateX(10px);
 }
 
-.toggle .hamburger__line-3{
+.toggle .hamburger__line-3 {
     transform: rotate(45deg) translate(-7px, -6px);
 
 }
-.header{
+
+.header {
     position: relative;
 }
-.header .btn{
+
+.header .btn {
     position: absolute;
-    top:20rem;
-    left:5rem;
+    top: 20rem;
+    left: 5rem;
     font-size: var(--smlt-txt);
     background-image: linear-gradient(to top right, var(--tertiary-color), var(--primary-color));
     color: var(--white);
+}
+
+.about__us {
+    margin-bottom: 40px;
+}
+
+.about__us-image {
+    margin-top: -20px;
+    position: relative;
+}
+
+.about__image {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.about__us-image::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 60%;
+    left: 30%;
+    background-image: url(../Images/Homepage/Rectangle\ 459-edited.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); */
+    /* background-color: rgba(0,0,0,.2); */
+}
+
+.about__us-text {
+    margin-top: 22rem;
+    color: var(--secondary-color);
+}
+
+.about__us-title {
+    font-size: var(--mdm-txt);
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.about__us-description {
+    letter-spacing: .2px;
+    line-height: var(--line-height);
+    margin-bottom: 4rem;
+}
+
+.about__us-description,
+.about-us-link {
+    font-size: calc((var(--sml-txt)) - .4rem);
+}
+
+.about-us-link {
+    font-weight: 500;
+}
+
+.contribution{
+    background-color:rgba(254, 195, 34, 0.25);
+    padding: 5rem 0;
+    position: relative;
+    color: var(--secondary-color);
+}
+
+.contributions--value{
+    font-size: var(--mdm-txt);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contributions-name{
+    font-size: var(--sml-txt);
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap:6rem;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.contribution::after{
+    content: 'Enactus Futa';
+    display: block;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 10rem;
+    text-align: center;
+    margin: auto;
+    color: rgba(4, 23, 42, 0.068);
+    z-index: -1;
+}
+
+.statement{
+    margin-top: 4rem;
+}
+
+.statement__mission,
+.statement-vision{
+    padding: 6rem 0;
+    background-position: center;
+    background-size: cover;
+}
+.statement__mission{
+    background-image: url(../Images/Homepage/Group\ 74.png);
+    background-color: rgba(0, 0, 0, .6);
+    
+}
+
+.statement-vision{
+    background-image: url(../Images/Homepage/Rectangle\ 460.png);
+    background-color: rgba(0, 0, 0, 1);
+    margin-top: .5rem;
+    padding: 7rem 0;
+}
+
+.statement__mission-title,
+.statement__vision-title{
+    font-size: var(--mdm-txt);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.statement__mission-description,
+.statement__vision-description{
+    font-size: var(--smlt-txt);
+    color: var(--white);
+    letter-spacing: .2px;
+    line-height: var(--line-height);
+    text-align: center;
+}
+
+.projects{
+    margin-top:3rem;
+}
+
+.project__title{
+    color: var(--secondary-color);
+    font-size: calc((var(--mdm-txt)) - .4rem);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.project__title::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15rem;
+    height: .7rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    text-align: center;
+    bottom: -1rem;
 }
