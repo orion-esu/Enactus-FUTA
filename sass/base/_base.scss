@@ -12,6 +12,8 @@ html {
 
 body {
     font-family: $lato-family;
+    line-height: $line-height;
+    letter-spacing: .5px;
 }
 .container {
     width: 90%;
