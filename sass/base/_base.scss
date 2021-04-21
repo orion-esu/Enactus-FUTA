@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65%;
+}
+
+body {
+    font-family: $lato-family;
+}
+.container {
+    width: 90%;
+    max-width: 1350px;
+    margin: auto;
+    /* overflow: hidden; */
+}

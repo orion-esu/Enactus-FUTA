@@ -1,0 +1,57 @@
+.btn{
+
+    &:link,
+    &:visited {
+        background-color: $color-orange;
+        color: $color-blue;
+        transition: all .3s ease;
+    }
+    
+    &-clr {
+        padding: 1rem 1rem;
+        font-size: calc(#{$font-smallest} + .2rem);
+        transform: perspective(1px);
+        backface-visibility: hidden;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index: -1;
+            transform: scaleY(0);
+            transform-origin: 0% 0%;
+            transition: transform .5s ease;
+        }
+
+        &:hover::before {
+            transform: scaleY(1);
+            border: 2px solid $color-orange;
+        }
+        &:active {
+            transform: translateY(3px);
+        }
+    }
+    &-donate {
+        display: inline-block;
+        font-size: $font-smallest;
+        margin-top: 1rem;
+        padding: 1.2rem 4rem;
+    }
+    &-newsletter {
+        width: 100%;
+        max-width: 350px;
+        padding: 1.2rem 0;
+    }
+    &-form {
+        font-size: $font-smallest;
+        padding: 1.2rem 2rem;
+        border-radius: 3px;
+        margin: 0 0 0 -30px;
+        align-self: flex-end;
+    }
+}
