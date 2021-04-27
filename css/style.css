@@ -162,7 +162,7 @@ footer {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; }
+  align-items: center; }
   .nav__logo {
     width: 20%;
     max-width: 140px; }
@@ -195,6 +195,13 @@ footer {
   .hov-er:hover::after {
     transform: scaleX(1); }
 
+.header {
+  height: auto;
+  width: 100%;
+  background-color: #000;
+  color: yellow;
+  padding-top: 10rem; }
+
 li {
   list-style-type: none; }
 
@@ -204,9 +211,6 @@ a {
 
 img {
   max-width: 100%; }
-
-.header {
-  /* padding-top: 7.9rem; */ }
 
 .header .btn {
   position: absolute;
