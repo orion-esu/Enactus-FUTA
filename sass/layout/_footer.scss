@@ -7,8 +7,12 @@ footer {
     &__section{
         &-1{
             margin-bottom: 2rem;
+
+            [class$="-1-text"]:not(:last-child){
+                margin-bottom:1.2rem;
+                
+            }
             .footer-logo{
-                margin-bottom: 2rem;
                 &--img{
                     width: 120px;
                 }
@@ -21,19 +25,13 @@ footer {
                 margin-right: 1.5rem;
             }
             &-text:nth-child(4){
-                margin-top: 1.7rem;
                 display: flex;
             }
         }
-        &-3{
-            h3{
-                margin-bottom: 2rem;
-            }
-        }
+        
         &-4{
            h3{
             font-weight: 400;
-            margin-bottom: 1rem;
            }
            .icons{
                &__link + &__link{
@@ -71,6 +69,7 @@ footer {
         }   
     }
     &-2,&-3,&-4,&__newsletter{
+
         margin-top: 3rem;
     }
     [class="footer__link"],

@@ -1,7 +1,138 @@
 .header{
-    height: auto;
-    width: 100%;
-    background-color: #000;
-    color: yellow; 
-    padding-top: 10rem; 
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0 90%);
+    background: black;
+    &__details{
+        position: relative;
+    }
+
+    &__img{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        filter: brightness(50%);
+    }
+
+    &__caption{
+        font-weight: 300;
+        position: absolute;
+        top: 45%;
+        left: 8%;
+    }
+}
+
+.section-vision{
+    color:#04172A;
+
+    .vision{
+        text-align: right;
+    }
+    .vision-img{
+        border-radius: .5px;
+        display:inline-block;
+        width:75%;
+    }
+
+    .vision-statement{
+        font-size:1.6rem;
+    }
+}
+
+.section-contributions{
+    background-color: $color-orange-light;
+    padding:5rem 0;
+    text-align:center;
+    font-size: 2.2rem;
+    color:#04172A;
+    position: relative;
+    z-index:-2;
+
+    [class^="col-"]:not(:last-child){
+        margin-bottom: 2.5rem;
+    }
+
+    &::after{
+
+        content: 'Enactus FUTA';
+        display:inline-block;
+        color:rgba(4, 23, 42, .1);
+        font-size: 6rem;
+        // line-break: auto;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        opacity: .5;
+        transform: translate(-50%, -50%);
+        font-weight:400;
+    }
+    .row{
+        z-index: -9;
+    }
+}
+
+.contributions__stats--details{
+    font-weight: 400;  
+    color:rgba(4, 23, 42, 0.6);
+    font-size: 2rem;
+
+}
+
+.section-values{
+    .value__heading{
+        padding:2rem 0;
+        background: rgba(254, 217, 116, 0.25);
+        border: 1px solid #F4F4F4;
+        width:50%;
+    }
+
+    .value__details{
+        background-color:rgba(244, 244, 244, 0.5);
+        font-size:1.6rem;
+        color: rgba(4, 23, 42, 0.8);
+        width: 100%;
+    }
+
+    .contain{
+        padding:3rem 0;
+        width: 90%;
+        margin-left: 3rem;
+    }
+
+    .value-image{
+        width:100%;
+    }
+
+    .value-statement{
+
+        span{
+            font-weight:700;
+            color:$color-orange;
+        }
+    }
+}
+
+.section-team{
+    text-align:center;
+    [class^="col-"]:not(:last-child){
+        margin-bottom: 2rem;
+    }
+}
+
+.profile{
+
+    &__details{
+        margin-top:1rem;
+        font-size:1.6rem;
+        color:#04172A;
+
+        &--position{
+            color:rgba(4, 23, 42, 0.6);
+        }
+    }
+}
+.cartoon{
+    margin:auto;
+    width:12rem;
+    height:12rem;
+    border: 0.6px solid rgba(254, 217, 116, 0.25);
+    border-radius: 50%;
 }

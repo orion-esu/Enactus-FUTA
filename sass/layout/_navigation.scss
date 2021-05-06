@@ -1,6 +1,6 @@
 .nav__menu {
     background-color: $color-brown;
-    position: fixed;
+    // position: fixed;
     width: 100%;
     z-index: 99;
     padding: 1rem 0 1.5rem 0;
@@ -10,7 +10,7 @@
     justify-content: space-between;
     // align-items: flex-end;
     align-items: center;
-    
+
 
     &__logo {
         width: 20%;

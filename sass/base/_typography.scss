@@ -1,0 +1,56 @@
+.heading-secondary{
+    
+    font-size: 2rem;
+    color:$color-white;
+    letter-spacing: .5px;
+}
+
+.vision-title,
+.mission-title,
+.value__title,
+.team__title{
+    font-size:2rem;
+    text-transform:uppercase;
+    font-weight:500;
+    display: block;
+    &::after{
+            // margin: auto;
+
+        // text-align: center;
+        content: '';
+        // width:70%;
+        // width: 12rem;
+        max-width:140px;
+        height: .5rem;
+        background-color:$color-orange;
+        display:block;
+        border-radius:1rem;
+        
+
+    }
+}
+
+.paragraph{
+    font-size: 1.6rem;
+    &,
+    &-link{
+        color: white;
+    }
+}
+.mission-statement{
+    font-size: 1.6rem;
+    color:rgba(4, 23, 42, 0.75);
+}
+.mission-text{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #04172A;
+    display: block;
+}
+.team__title{
+    &::after{
+        max-width:230px;
+        margin: auto;
+    }
+}
