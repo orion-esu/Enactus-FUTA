@@ -55,7 +55,8 @@ a {
 .vision-title,
 .mission-title,
 .value__title,
-.team__title {
+.team__title,
+.project-title {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -63,7 +64,8 @@ a {
   .vision-title::after,
   .mission-title::after,
   .value__title::after,
-  .team__title::after {
+  .team__title::after,
+  .project-title::after {
     content: '';
     max-width: 140px;
     height: .5rem;
@@ -87,9 +89,13 @@ a {
   color: #04172A;
   display: block; }
 
-.team__title::after {
+.team__title::after,
+.project-title::after {
   max-width: 230px;
   margin: auto; }
+
+.project-title {
+  text-transform: capitalize; }
 
 .u-center-text {
   text-align: center !important; }
