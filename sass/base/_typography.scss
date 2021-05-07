@@ -8,7 +8,8 @@
 .vision-title,
 .mission-title,
 .value__title,
-.team__title{
+.team__title,
+.project-title{
     font-size:2rem;
     text-transform:uppercase;
     font-weight:500;
@@ -48,9 +49,15 @@
     color: #04172A;
     display: block;
 }
-.team__title{
+.team__title,
+.project-title{
     &::after{
         max-width:230px;
         margin: auto;
     }
+}
+
+.project-title{
+    text-transform: capitalize;
+    // font-size: 2.5rem;
 }
