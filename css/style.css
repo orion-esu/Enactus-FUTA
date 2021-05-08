@@ -95,7 +95,35 @@ a {
   margin: auto; }
 
 .project-title {
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  font-size: 2.5rem; }
+
+.card__title {
+  font-size: 2rem;
+  color: #04172A;
+  font-weight: 500; }
+
+.card__details {
+  font-size: 1.4rem;
+  color: #04172a99; }
+
+.title {
+  font-size: 1.8rem; }
+  .title-span {
+    color: #fec222; }
+
+.details {
+  font-size: 1.4rem;
+  color: rgba(4, 23, 42, 0.8); }
+
+img {
+  display: inline-block; }
+
+.link {
+  color: rgba(4, 23, 42, 0.6);
+  font-size: 1.4rem;
+  border-bottom: 1px solid rgba(4, 23, 42, 0.6);
+  padding-bottom: .2rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -170,6 +198,12 @@ a {
   border-radius: 3px;
   margin: 0 0 0 -30px;
   align-self: flex-end; }
+
+.btn-card {
+  padding: 1.2rem 4rem;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  color: rgba(4, 23, 42, 0.8); }
 
 footer {
   background: #080702;
@@ -424,6 +458,65 @@ footer {
   height: 12rem;
   border: 0.6px solid rgba(254, 217, 116, 0.25);
   border-radius: 50%; }
+
+.project-card .row [class^="col"]:not(:last-child) {
+  margin-bottom: 4rem; }
+
+.project-card .row .col-1-of-3 {
+  max-width: 400px;
+  margin: auto; }
+
+@media (min-width: 800px) {
+  .project-card .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; }
+    .project-card .row .col-1-of-3 {
+      max-width: 350px;
+      margin: 0 auto; } }
+
+.project-card .card {
+  background-color: #fed97417;
+  border: 1px solid #F4F4F4;
+  color: black;
+  padding-bottom: 5rem;
+  border-radius: 7px; }
+  .project-card .card__picture {
+    width: 100%; }
+  .project-card .card__details {
+    padding: 0 2rem; }
+
+.past-projects [class^="col"]:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.past-projects .project-image {
+  width: 100%;
+  max-width: 400px;
+  margin: auto; }
+  .past-projects .project-image-sub {
+    width: 100%;
+    display: flex;
+    margin-top: -4px; }
+  .past-projects .project-image .project-img-sub {
+    width: 50%; }
+
+.past-projects .util {
+  width: 100%;
+  max-width: 500px;
+  margin: auto; }
+
+@media (min-width: 800px) {
+  .past-projects .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem; }
+  .past-projects .row:nth-child(2) {
+    flex-direction: row-reverse; }
+  .past-projects .row:nth-child(4) {
+    flex-direction: row-reverse; }
+  .past-projects [class^="col"]:not(:last-child) {
+    margin-bottom: 0; } }
 
 li {
   list-style-type: none; }

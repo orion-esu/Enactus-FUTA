@@ -54,4 +54,10 @@
         margin: 0 0 0 -30px;
         align-self: flex-end;
     }
+    &-card{
+        padding: 1.2rem 4rem;
+        font-size: 1.6rem;
+        border-radius: 5px;
+        color:rgba(4, 23, 42, 0.8);
+    }
 }
