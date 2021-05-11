@@ -71,6 +71,8 @@
 .card__details{
     font-size: 1.4rem;
     color:#04172a99;
+
+   
 }
 
 .title{
@@ -83,6 +85,8 @@
 .details{
     font-size: 1.4rem;
     color:rgba(4, 23, 42, 0.8);
+
+    
 }
 
 img{
@@ -94,4 +98,11 @@ img{
     font-size: 1.4rem;
     border-bottom: 1px solid rgba(4, 23, 42, 0.6);
     padding-bottom: .2rem;
+}
+
+@media (min-width:600px){
+    .card__details,
+    .details{
+        font-size: 1.5rem;
+    }
 }

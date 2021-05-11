@@ -5,8 +5,8 @@
             margin-bottom: 4rem;
         }
         .col-1-of-3{
-            max-width: 400px;
-            margin: auto;
+           width: 400px;
+            margin: 0 auto;
         }
     }
 
@@ -16,10 +16,13 @@
             display: flex;
             flex-wrap: wrap;
             gap:1rem;
+            justify-content: space-evenly;
 
             .col-1-of-3{
-                max-width: 350px;
-                margin:0 auto;
+                flex-basis: 350px;
+                // max-width: 350px;
+                margin:0 0;
+                // width:30%;
             }
         }
 
@@ -77,12 +80,8 @@
             align-items: center;
             gap:5rem;
         }
-
-        .row:nth-child(2){
-            flex-direction: row-reverse;
-        }
-        .row:nth-child(4){
-            flex-direction: row-reverse;
+        .order{
+            order: 1;
         }
 
         [class^="col"]:not(:last-child){
