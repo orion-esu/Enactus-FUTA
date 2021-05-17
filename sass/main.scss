@@ -15,6 +15,8 @@
 @import "layout/responsive";
 
 @import "pages/about";
+@import "pages/contact";
+@import "pages/gallery";
 @import "pages/home";
 @import "pages/projects";
 
@@ -208,17 +210,22 @@ img {
 
 .project__title,
 .moments__title,
-.contact__title {
+.contact__title,
+.contact-us__title,
+.form__title {
     color: $color-blue;
     font-size: $font-small;
     position: relative;
     display: flex;
     justify-content: center;
+    font-weight: 500;
 }
 
 .project__title::after,
 .moments__title::after,
-.contact__title::after {
+.contact__title::after,
+.form__title::after,
+.contact-us__title::after {
     content: '';
     position: absolute;
     display: block;
@@ -228,6 +235,11 @@ img {
     border-radius: 1rem;
     text-align: center;
     bottom: -1rem;
+}
+
+.contact-us__title::after,
+.form__title::after {
+    bottom: -.1rem;
 }
 
 .donate {
@@ -347,7 +359,7 @@ img {
     color: rgba(255, 255, 255, 0.7);
 }
 
-input[type=email] {
+input[type="email"] {
     padding: 1rem;
     width: 75%;
     margin-top: 2rem;
@@ -359,7 +371,7 @@ input[type=email] {
     outline: none;
 }
 
-input[type=email]:focus {
+input[type="email"]:focus {
     border-color: $color-orange;
 }
 
@@ -461,7 +473,7 @@ aside {
 
 .contact__number p,
 .contact__email p,
-address {
+.contact__location__sub {
     margin-top: 1.2rem;
     font-style: normal;
 }
@@ -527,7 +539,7 @@ iframe {
         gap: 0;
     }
 
-    .footer input[type=email],
+    .footer input[type="email"],
     .btn-newsletter {
         font-size: calc(#{$font-small} - .6rem);
     }
