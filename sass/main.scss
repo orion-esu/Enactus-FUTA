@@ -16,6 +16,7 @@
 
 @import "pages/about";
 @import "pages/contact";
+@import "pages/donate";
 @import "pages/gallery";
 @import "pages/home";
 @import "pages/projects";
@@ -212,7 +213,8 @@ img {
 .moments__title,
 .contact__title,
 .contact-us__title,
-.form__title {
+.form__title,
+.donate-title {
     color: $color-blue;
     font-size: $font-small;
     position: relative;
@@ -225,7 +227,8 @@ img {
 .moments__title::after,
 .contact__title::after,
 .form__title::after,
-.contact-us__title::after {
+.contact-us__title::after,
+.donate-title::after {
     content: '';
     position: absolute;
     display: block;
@@ -238,7 +241,8 @@ img {
 }
 
 .contact-us__title::after,
-.form__title::after {
+.form__title::after,
+.donate-title::after {
     bottom: -.1rem;
 }
 
