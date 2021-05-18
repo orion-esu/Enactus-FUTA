@@ -35,6 +35,11 @@ img {
     max-width: 100%;
 }
 
+textarea{
+    font-family: inherit;
+    resize: none;
+}
+
 .header .btn {
     position: absolute;
     top: 20rem;
