@@ -31,18 +31,17 @@
             <div class="nav">
                 <div class="nav__logo">
                     <a href="index.html">
-                        <img src="./Images/Logo/336456.svg" alt="Enactus Futa Logo">
+                        <img src="./Images/Logo/336456.svg" alt="Enactus Futa Logo" class="nav__logo-img">
+                        <span class="nav__logo-text">FUTA</span>
                     </a>
-                  
-                    <!-- <span class="futa">Futa</span> -->
                 </div>
 
                 <ul class="nav__item">
-                    <li class="nav__list hov-er"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__list hov-er"><a href="about-us.html" class="nav__link">About Us</a></li>
-                    <li class="nav__list hov-er"><a href="projects.html" class="nav__link">Projects</a></li>
-                    <li class="nav__list hov-er"><a href="gallery.html" class="nav__link">Gallery</a></li>
-                    <li class="nav__list hov-er"><a href="contact-us.html" class="nav__link">Contact Us</a></li>
+                    <li class="nav__list"><a href="index.html" class="nav__link hov-er">Home</a></li>
+                    <li class="nav__list"><a href="about-us.html" class="nav__link hov-er">About Us</a></li>
+                    <li class="nav__list"><a href="projects.html" class="nav__link hov-er">Projects</a></li>
+                    <li class="nav__list"><a href="gallery.html" class="nav__link hov-er">Gallery</a></li>
+                    <li class="nav__list"><a href="contact-us.html" class="nav__link hov-er">Contact Us</a></li>
                     <a href="donate.html" class="btn btn-clr btn-animate">Donate Now</a>
                     <!--   -->
                 </ul>
@@ -58,7 +57,7 @@
 
     </nav>
 
-    <header class="header">
+    <!-- <header class="header">
 
         <picture>
             <source media="(min-width: 800px)" 
@@ -68,6 +67,33 @@
             <img src="./Images/Homepage/Images(Mobile)/Group 73-eidted.png" alt="">
         </picture>
 
+    </header> -->
+
+    <header class="heading">
+        <figure class="heading__image">
+            <picture>
+                <source srcset="
+                                ./Images/Homepage/header-img-md.png 375w,
+                                ./Images/Homepage/header-img-md.png 799w,
+                                ./Images/Homepage/header-img-lg.png 1441w" sizes="
+                                (min-width: 600px) 1441px,
+                                (min-width: 375px) 799px,
+                                (max-width: 375px) 375px,
+                                100vw">
+
+                <img src="./Images/Homepage/header-img-sm.png" alt="Heading Image" class="heading-image header-img">
+            </picture>
+            <!-- </picture> -->
+
+            <figcaption class="heading__details header__details">
+                <!-- <h2 class="heading__details-title" id="con">Contact Us</h2>
+                <p class="heading__details-description">
+                    <a href="/index.html" class="heading__details-link">Home</a>
+                    &rarr; Contact
+                </p> -->
+                <a href="donate.html" class="btn--header btn-clr" target="_parent">Donate Now</a>
+            </figcaption>
+        </figure>
     </header>
 
     <main class="main">
@@ -77,18 +103,19 @@
             <section class="about__us">
 
                 <div class="about__us-image">
-                    <img src="./Images/Homepage/Rectangle 458-edited.png" alt="" class="about__image-1">
-                    <img src="./Images/Homepage/Rectangle 459-edited.png" alt="" class="about__image-2">
+                    <img src="./Images/Homepage/Rectangle 458-edited.png" alt="" class="about__us-image-1">
+                    <img src="./Images/Homepage/Rectangle 459-edited.png" alt="" class="about__us-image-2">
                 </div>
 
                 <div class="about__us-text">
-                    <h2 class="about__us-title">About Us</h2>
-                    <p class="about__us-description">Enactus is an international nonprofit organization dedicated to
+                    <h2 class="about__us-title u-margin-bottom-sm">About Us</h2>
+                    <p class="about__us-description u-margin-bottom-m">Enactus is an international nonprofit
+                        organization dedicated to
                         inspiring student to improve the world through entrepreneurial action. We as a branch in Federal
                         University of Technology, Akure, Nigeria, create community development projects that put
                         people's
                         own ingenuity and talents at the center of improving the trajectory of their lives.</p>
-                    <a href="" class="btn about-us-link" target="_parent">Read More</a>
+                    <a href="" class="btn btn-about btn-clr" target="_parent">Read More</a>
                 </div>
 
             </section>
@@ -98,51 +125,51 @@
         <section class="contribution">
             <div class="container flex">
                 <div class="contribution__block">
-                    <h3 class="contributions--value">10+</h3>
-                    <p class="contributions-name">Communities Reached</p>
+                    <h3 class="contribution--value">10+</h3>
+                    <p class="contribution-name">Communities Reached</p>
                 </div>
 
                 <div class="contribution__block">
-                    <h3 class="contributions--value">12+</h3>
-                    <p class="contributions-name">Completed Projects</p>
+                    <h3 class="contribution--value">12+</h3>
+                    <p class="contribution-name">Completed Projects</p>
                 </div>
 
                 <div class="contribution__block">
-                    <h3 class="contributions--value">50000+</h3>
-                    <p class="contributions-name">Impacted Lives</p>
+                    <h3 class="contribution--value">50000+</h3>
+                    <p class="contribution-name">Impacted Lives</p>
                 </div>
             </div>
         </section>
 
-        <section class="statement">
+        <section class="statement u-margin-top-m">
 
             <div class="statement__mission">
                 <div class="container">
-                    <h3 class="statement__mission-title">Our Mission</h3>
+                    <h3 class="statement__mission-title u-margin-bottom-sm">Our Mission</h3>
                     <p class="statement__mission-description">Engage the next generation of entrepreneurial leaders in
                         the
                         use of inovation and business principles to improve and solve problems.</p>
                 </div>
             </div>
 
-            <div class="statement-vision">
+            <div class="statement__vision">
                 <div class="container">
-                    <h3 class="statement__vision-title">Our Vision</h3>
+                    <h3 class="statement__vision-title u-margin-bottom-sm">Our Vision</h3>
                     <p class="statement__vision-description">To create a better and more sustainable World for us all.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="projects">
-            <h2 class="project__title">Our Projects</h2>
+        <section class="projects u-margin-top-m">
+            <h2 class="project__title u-margin-bottom-m">Our Projects</h2>
 
             <div class="donate">
                 <div class="container">
 
                     <div class="donate-flex">
                         <div class="donate__details">
-                            <div class="donate__details-1">
+                            <div class="donate__details-1 u-margin-bottom-sm">
                                 <img src="./Images/Homepage/Rectangle 492-2.png" alt="" class="donate-img">
                                 <div class="donate-text">
                                     <h4 class="text-header">Project PES</h4>
@@ -154,15 +181,15 @@
                                     </p>
                                 </div>
                             </div>
-                            <a href="donate.html" class="btn btn-donate" target="_parent">Donate Now</a>
+                            <a href="donate.html" class="btn btn-donate btn-clr" target="_parent">Donate Now</a>
                         </div>
 
                         <div class="donate__details">
-                            <div class="donate__details-2">
+                            <div class="donate__details-2 u-margin-bottom-sm">
                                 <img src="./Images/Homepage/Rectangle 493-2.png" alt="" class="donate-img">
                                 <div class="donate-text">
-                                    <h4 class="text-header">Project Banner</h4>
-                                    <p class="text-description">
+                                    <h4 class="donate-text__header">Project Banner</h4>
+                                    <p class="donate-text__description">
                                         This project is aimed at managing excess waste, majorly flex banners by
                                         converting
                                         them to usable products such as bags, which is Durable, Waterproof, Exquisite &
@@ -170,11 +197,11 @@
                                     </p>
                                 </div>
                             </div>
-                            <a href="donate.html" class="btn btn-donate" target="_parent">Donate Now</a>
+                            <a href="donate.html" class="btn btn-donate btn-clr" target="_parent">Donate Now</a>
                         </div>
 
                         <div class="donate__details">
-                            <div class="donate__details-3">
+                            <div class="donate__details-3 u-margin-bottom-sm">
                                 <img src="./Images/Homepage/Rectangle 494-2.png" alt="" class="donate-img">
                                 <div class="donate-text">
                                     <h4 class="text-header">Project Tyre</h4>
@@ -185,7 +212,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <a href="donate.html" class="btn btn-donate" target="_parent">Donate Now</a>
+                            <a href="donate.html" class="btn btn-donate btn-clr" target="_parent">Donate Now</a>
                         </div>
                     </div>
                 </div>
@@ -193,102 +220,124 @@
             </div>
         </section>
 
-        <section class="moments container">
+        <section class="moments u-margin-top-m">
 
-            <h2 class="moments__title">Some Moments</h2>
+            <div class="container">
+
+                <h2 class="moments__title u-margin-bottom-m">Some Moments</h2>
 
                 <div class="moments-images">
 
                     <!-- <div class="moments-img"> -->
-                        <img src="./Images/Homepage/Rectangle 492.png" alt="" class="moments-img--1">
+                    <img src="./Images/Homepage/Rectangle 492.png" alt="" class="moments-img">
                     <!-- </div> -->
 
                     <!-- <div class="moments-img"> -->
-                        <img src="./Images/Homepage/Rectangle 493.png" alt="" class="moments-img--2">
+                    <img src="./Images/Homepage/Rectangle 493.png" alt="" class="moments-img">
                     <!-- </div> -->
 
                     <!-- <div class="moments-img"> -->
-                        <img src="./Images/Homepage/Rectangle 494.png" alt="" class="moments-img--3">
+                    <img src="./Images/Homepage/Rectangle 494.png" alt="" class="moments-img">
                     <!-- </div> -->
 
                     <!-- <div class="moments-img"> -->
-                        <img src="./Images/Homepage/Rectangle 492-1.png" alt="" class="moments-img--4">
+                    <img src="./Images/Homepage/Rectangle 492-1.png" alt="" class="moments-img">
                     <!-- </div> -->
 
                     <!-- <div class="moments-img"> -->
-                        <img src="./Images/Homepage/Rectangle 493-1.png" alt="" class="moments-img--5">
+                    <img src="./Images/Homepage/Rectangle 493-1.png" alt="" class="moments-img">
                     <!-- </div> -->
 
                     <!-- <div class="moments-img"> -->
-                        <img src="./Images/Homepage/Rectangle 494-1.png" alt="" class="moments-img--6">
+                    <img src="./Images/Homepage/Rectangle 494-1.png" alt="" class="moments-img">
                     <!-- </div> -->
                 </div>
+
+            </div>
         </section>
 
-        <section class="newsletter__box">
-            <div class="newsletter__details">
-                <div class="container">
-                    <h3 class="newsletter__title">Stay Updated</h3>
-                    <p class="newsletter__description">Recieve Updates on events from Enactus FUTA</p>
-                    <p class="newsletter-subtxt">We promise not to spam!</p>
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-container">
+                    <div class="newsletter__details">
+                        <h3 class="newsletter__details-title u-margin-bottom-s">Stay Updated</h3>
+                        <p class="newsletter__details-description u-margin-bottom-sm">Recieve Updates on events from
+                            Enactus FUTA</p>
+                        <p class="newsletter__details-subtxt">We promise not to spam!</p>
 
-                    <form action="" class="form">
-                        <input type="email" name="e-mail" id="" placeholder="Enter email address">
-                        <a href="#" class="btn btn-form">Subscribe</a>
-                    </form>
-                </div>
-            </div>
+                        <form action="" class="newsletter__details__form u-margin-top-s">
+                            <input type="email" name="e-mail" id="" placeholder="Enter email address"
+                                class="newsletter__details__form-input" required>
+                            <button class="btn btn-form btn-clr">Subscribe</button>
+                        </form>
+                    </div>
 
-            <aside class="aside">
-                <div class="container">
-                    <div class="aside__details">
-                        <img src="./Images/Homepage/Rectangle 495.png" alt="" class="aside-image">
-                        <div class="aside__description">
-                            <div class="aside__text">
-                                <h3 class="aside__title">"Giving is The Greatest Act of Grace"</h3>
-                                <a href="donate.html" class="btn btn-aside">Donate Now</a>
+                    <aside class="aside">
+                        <div class="container">
+                            <div class="aside__details">
+                                <picture>
+                                    <source srcset="
+                                                    ./Images/Homepage/newsletter-img-s.png 300w,
+                                                    ./Images/Homepage/newsletter-img-l.png 477w" sizes="
+                                                    (min-width: 650px) 477px,
+                                                    (max-width: 650px) 477px,
+                                                    100vw">
+                    
+                                    <img src="./Images/Homepage/newsletter-img-s.png" alt="Image of a girl carrying a baby" class="aside-image">
+                                </picture>
+                                <!-- <div class="aside__description"> -->
+                                <div class="aside__text">
+                                    <h3 class="aside__title u-margin-bottom-s">"Giving is The Greatest Act of Grace"</h3>
+                                    <div class="u-margin-top-sm">
+                                        <a href="donate.html" class="btn-aside">Donate Now</a>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
                             </div>
                         </div>
-                    </div>
+                    </aside>
                 </div>
-            </aside> 
+            </div>
         </section>
 
         <div class="container">
-            <section class="contact">
+            <section class="contact u-margin-top-m u-margin-bottom-m">
 
-                <h2 class="contact__title">Contact Us</h2>
+                <h2 class="contact__title u-margin-bottom-m">Contact Us</h2>
 
                 <div class="contact__details">
 
                     <div class="contact__number">
-                        <i class="fas fa-phone-alt"></i>
-                        <h3 class="contact__number__main">Phone Number</h3>
-                        <p>
+                        <i class="fas fa-phone-alt u-margin-bottom-s"></i>
+                        <h3 class="contact__description">Phone Number</h3>
+                        <p class="contact__sub">
                             <a href="tel:+234 905 286 8337" class="contact-link">+234 905 286 8337</a>
                         </p>
                     </div>
 
+                    <span class="span-line"></span>
+
                     <div class="contact__email">
-                        <i class="fas fa-envelope"></i>
-                        <h3 class="contact__email__main">Email Address</h3>
-                        <p class="contact__email__sub">
+                        <i class="fas fa-envelope u-margin-bottom-s"></i>
+                        <h3 class="contact__description">Email Address</h3>
+                        <p class="contact__sub">
                             <a href="mailto:Enactusfuta2@gmail.com" class="contact-link">Enactusfuta2@gmail.com</a>
                         </p>
                     </div>
 
+                    <span class="span-line"></span>
                     <div class="contact__location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3 class="contact__location__main">Location</h3>
-                        <address class="contact__location__sub">Federal University of Technology, Akure, Ondo State.
+                        <i class="fas fa-map-marker-alt u-margin-bottom-s"></i>
+                        <h3 class="contact__description">Location</h3>
+                        <address class="contact__sub">Federal University of Technology, Akure, Ondo State.
                         </address>
                     </div>
                 </div>
+            </section>
         </div>
 
-        </section>
 
-        <section class="map">
+        <section class="map u-margin-top-m">
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.9090478955704!2d7.08757061443838!3d5.430785236407183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10425f066c658699%3A0xbc7453a96a27c8f5!2sFederal%20University%20of%20Technology%20-%20Owerri!5e0!3m2!1sen!2sng!4v1618616825327!5m2!1sen!2sng"
@@ -296,7 +345,7 @@
 
         </section>
 
-        <footer>
+        <footer class="u-margin-top-l">
 
             <div class="container">
 
@@ -304,7 +353,7 @@
 
                     <div class="footer__section">
                         <div class="footer__section-1">
-                            <div class="footer-logo">
+                            <div class="footer-logo u-margin-bottom-sm">
                                 <img src="./Images/Logo/336456.svg" alt="Enactus Futa Logo" class="footer-logo--img">
                                 <span class="footer-logo--text">FUTA</span>
                             </div>
@@ -316,7 +365,7 @@
                             </p>
                             <span class="footer__section-1-text">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <p class="">
+                                <p class="descrip">
                                     <a href="https://goo.gl/maps/XqA9HM467DEuaDuv9" target="_blank"
                                         rel="noopener noreferrer" class="footer__link">Federal University of Technology,
                                         Akure, Ondo State.</a>
@@ -328,7 +377,7 @@
                         <div class="footer__section-2">
                             <a href="" class="footer__link">Home <span class="dash">|</span> </a>
                             <a href="" class="footer__link">Our Vision <span class="dash">|</span> </a>
-                            <a href="" class="footer__link">Projects <span class="dash">|</span> </a>
+                            <a href="projects.html" class="footer__link">Projects <span class="dash">|</span> </a>
                             <a href="" class="footer__link">Meet the team <span class="dash">|</span> </a>
                             <a href="donate.html" class="footer__link">Donate</a>
                         </div>
@@ -336,8 +385,9 @@
 
                     <div class="footer__section">
                         <div class="footer__section-3">
-                            <h3>About Us</h3>
-                            <p class="footer-description">Enactus is an international nonprofit organization dedicated to inspiring student to
+                            <h3 class="u-margin-bottom-sm">About Us</h3>
+                            <p class="footer-description">Enactus is an international nonprofit organization dedicated
+                                to inspiring student to
                                 improve
                                 the
                                 world through entrepreneurial action. we are a branch in Federal University of
@@ -347,7 +397,7 @@
 
                         <div class="footer__section-4">
                             <h3>Connect With Us Elsewhere</h3>
-                            <div class="icons">
+                            <div class="icons u-margin-top-sm">
                                 <a href="" class="icons__link">
                                     <i class="fab fa-facebook-square"></i>
                                 </a>
@@ -362,12 +412,12 @@
                                 </a>
                             </div>
 
-                            <div class="footer__newsletter">
-                                <h3 class="newsletter__title">Stay Updated</h3>
-                                <form action="" class="newsletter__form">
-                                    <input type="email" name="" id="" placeholder="Enter email address">
-                                    <!-- <button class="">Subscribe</button> -->
-                                    <a href="#" class="btn btn-newsletter">Subscribe</a>
+                            <div class="footer__newsletter u-margin-top-s">
+                                <h3 class="newsletter__title u-margin-bottom-s">Stay Updated</h3>
+                                <form action="" class="footer__newsletter__form">
+                                    <input type="email" name="" id="" placeholder="Enter email address" class="footer__newsletter__form-input" required>
+                                    <button class="btn btn-newsletter">Subscribe</button>
+                                    <!-- <a href="#" class="btn btn-newsletter">Subscribe</a> -->
                                 </form>
                             </div>
 
