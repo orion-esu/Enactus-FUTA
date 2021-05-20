@@ -1,0 +1,142 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/buttons";
+
+@import 'layout/footer';
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/responsive";
+
+@import "pages/about";
+@import "pages/contact";
+@import "pages/donate";
+@import "pages/gallery";
+@import "pages/home";
+@import "pages/projects";
+
+
+// @media (min-width:400px) {
+
+//     .btn-newsletter {
+//         width: 40%;
+//         max-width: 150px;
+//         margin-left: -20px;
+//     }
+
+// }
+
+// @media (min-width:500px) {
+
+//     .footer input[type="email"],
+//     .btn-newsletter {
+//         font-size: calc(#{$font-small} - .6rem);
+//     }
+
+//     footer p,
+//     footer a {
+//         font-size: calc(#{$font-small} - .6rem);
+//     }
+
+//     .footer__section-3 h3,
+//     .footer__section-4 h3 {
+//         font-size: calc(#{$font-small} + .4rem);
+//     }
+// }
+
+// @media (min-width:700px) {
+
+//     .footer__section:nth-child(1) {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//     }
+
+//     .dash {
+//         display: none;
+//     }
+
+//     .footer__section-1 {
+//         width: 50%;
+//     }
+
+//     .footer__section-2 {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-evenly;
+//         margin: 0;
+//         align-items: flex-start;
+//         width: 45%;
+//     }
+
+//     .footer__section:nth-child(2) {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//     }
+
+//     .footer__section-3 {
+//         width: 50%;
+//     }
+
+//     .footer__section-4 h3 {
+//         font-size: calc(#{$font-small} - .4rem);
+//     }
+
+//     .footer__section-4 {
+//         width: 45%;
+//     }
+
+//     .newsletter__form {
+//         flex-direction: column;
+//         align-items: flex-start;
+//     }
+
+//     .btn-newsletter {
+//         align-self: flex-start;
+//         width: 100%;
+//         max-width: 350px;
+//         margin-left: 0;
+//     }
+// }
+
+// @media (min-width:1000px) {
+
+//     .footer {
+//         display: flex;
+//         gap: 0;
+//     }
+
+//     .footer__section:nth-child(1) {
+//         justify-content: space-around;
+//     }
+
+//     .footer__section-2,
+//     .footer__section-3,
+//     .footer__section-4 {
+//         margin-top: 0;
+//     }
+
+//     .footer__section-3 p,
+//     .footer a {
+//         font-size: calc(#{$font-small} - .8rem);
+//     }
+
+//     .footer__section-1 {
+//         margin-bottom: 0;
+//     }
+
+//     .footer__section-2 {
+//         width: 30%;
+//     }
+
+//     .footer__section-3 {
+//         align-self: center;
+//     }
+// }
