@@ -645,7 +645,7 @@ footer {
 @media (max-width: 950px) {
   .nav__item {
     position: fixed;
-    background-color: #090702;
+    background-color: yellow;
     width: 50%;
     right: 0;
     top: 10rem;
