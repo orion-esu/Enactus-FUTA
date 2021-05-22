@@ -240,6 +240,7 @@ textarea {
 
 @media (hover: hover) {
   .donate-text__header {
+    padding: 0 1rem;
     font-size: 2rem;
     color: #fec222; } }
   @media only screen and (hover: hover) and (min-width: 400px) {
@@ -1262,13 +1263,11 @@ footer {
 .donate {
   background-color: rgba(254, 217, 116, 0.25);
   padding: 5rem 0; }
-  .donate__details {
-    text-align: center; }
-    .donate__details:not(:last-child) {
-      margin-bottom: 6rem; }
-      @media only screen and (min-width: 750px) {
-        .donate__details:not(:last-child) {
-          margin: 0; } }
+  .donate__details:not(:last-child) {
+    margin-bottom: 6rem; }
+    @media only screen and (min-width: 750px) {
+      .donate__details:not(:last-child) {
+        margin: 0; } }
   .donate-text {
     display: none; }
   @media only screen and (min-width: 750px) {
