@@ -5,7 +5,8 @@
             margin-bottom: 4rem;
         }
         .col-1-of-3{
-           width: 400px;
+            width: 100%;
+            max-width: 400px;
             margin: 0 auto;
         }
     }
@@ -20,9 +21,7 @@
 
             .col-1-of-3{
                 flex-basis: 350px;
-                // max-width: 350px;
                 margin:0 0;
-                // width:30%;
             }
         }
 
@@ -44,7 +43,6 @@
         }
     }
 }
-
 
 .past-projects{
 

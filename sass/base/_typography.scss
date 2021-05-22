@@ -1,34 +1,7 @@
 .heading-secondary{
-    
     font-size: 2rem;
     color:$color-white;
     letter-spacing: .5px;
-}
-
-.vision-title,
-.mission-title,
-.value__title,
-.team__title,
-.project-title{
-    font-size:2rem;
-    text-transform:uppercase;
-    font-weight:500;
-    display: block;
-    &::after{
-            // margin: auto;
-
-        // text-align: center;
-        content: '';
-        // width:70%;
-        // width: 12rem;
-        max-width:140px;
-        height: .5rem;
-        background-color:$color-orange;
-        display:block;
-        border-radius:1rem;
-        
-
-    }
 }
 
 .paragraph{
@@ -43,23 +16,16 @@
     color:rgba(4, 23, 42, 0.75);
 }
 .mission-text{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500;
     text-transform: capitalize;
     color: #04172A;
+    line-height: 1.5;
     display: block;
-}
-.team__title,
-.project-title{
-    &::after{
-        max-width:230px;
-        margin: auto;
-    }
-}
 
-.project-title{
-    text-transform: capitalize;
-    font-size: 2.5rem;
+    @media only screen and (min-width: 900px){
+        font-size:2rem;
+    }
 }
 
 .card__title{
@@ -76,41 +42,87 @@
 /////////////////////////////////////
 // Section Titles
 
+.vision-title,
+.mission-title,
+.value__title{
+    text-transform:uppercase;
+}
+
+.vision-title,
+.mission-title,
+.value__title,
+.team__title,
 .project__title,
+.past-project,
 .moments__title,
 .contact__title,
 .contact-us__title,
 .form__title,
-.donate-title {
+.donate-title,
+.project-title {
     color: $color-blue;
     font-size: $font-small;
     position: relative;
     display: flex;
     justify-content: center;
-    font-weight: 600;
+    font-weight: 500;
+
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 15rem;
+        height: .5rem;
+        background-color: $color-orange;
+        border-radius: 1rem;
+        text-align: center;
+        bottom: -.5rem;
+    }
 
     @media only screen and (min-width: 500px){
-        font-size: calc(#{$font-small} + .4rem);
+        font-size: calc(#{$font-small} + .2rem);
     }
 }
 
-.project__title::after,
-.moments__title::after,
-.contact__title::after,
-.form__title::after,
-.contact-us__title::after,
-.donate-title::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 15rem;
-    height: .5rem;
-    background-color: $color-orange;
-    border-radius: 1rem;
-    text-align: center;
-    bottom: -.5rem;
+.value__title{
+    justify-content: flex-start;
 }
 
+.moments__title::after,
+.project-title::after{
+    width: 18rem;
+}
+
+.project-title::after{
+    width: 20rem;
+    text-transform: capitalize;
+}
+
+.form__title::after{
+    width: 20rem;
+}
+
+.vision-title::after,
+.project__title::after{
+    width: 15rem;
+}
+
+.value__title::after{
+    width: 15rem;
+}
+
+.mission-title::after{
+    width: 17rem;
+}
+
+.contact-us__title::after{
+    width: 14rem;
+}
+
+.team__title::after,
+.donate-title::after{
+    width: 21rem;
+}
 ////////////////////////////////////
 // About Us Section
 .about__us{
@@ -145,7 +157,49 @@
 
     &-name{
         color: #04172a99;
-        font-size: $font-small;
+        font-size: calc(#{$font-small} - .4rem);
+
+        @media only screen and (min-width:900px){
+            font-size: calc(#{$font-small} - .2rem);
+        }
+    }
+
+    &__stats--details{
+        font-weight: 400;  
+        color:rgba(4, 23, 42, 0.6);
+        font-size: 2rem;
+    }
+}
+
+
+.contribution--skew{
+
+    .contribution{
+    
+        &__block{
+            text-align: center;
+        }
+    
+        &--value{
+    
+            font-weight: 900;
+            font-size: calc(#{$font-small} + .6rem);
+        }
+    
+        &-name{
+            color: #04172a99;
+            font-size: calc(#{$font-small} - .4rem);
+    
+            @media only screen and (min-width:900px){
+                font-size: calc(#{$font-small} - .2rem);
+            }
+        }
+    
+        &__stats--details{
+            font-weight: 400;  
+            color:rgba(4, 23, 42, 0.6);
+            font-size: 2rem;
+        }
     }
 }
 
@@ -318,6 +372,12 @@ img{
     font-size: 1.4rem;
     border-bottom: 1px solid rgba(4, 23, 42, 0.6);
     padding-bottom: .2rem;
+    display: inline-block;
+    transition: all .3s;
+
+    &:hover{
+        transform: translateY(3px);
+    }
 }
 
 @media (min-width:600px){
@@ -326,8 +386,3 @@ img{
         font-size: 1.5rem;
     }
 }
-
-// #con{
-//     font-weight: 300;
-//     font-size: 2.5rem;    
-// }

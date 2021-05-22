@@ -23,101 +23,215 @@
 .section-vision{
     color:#04172A;
 
+    @media only screen and (min-width: 700px){
+
+        .row{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            align-content:center;
+            align-items: center;
+        }
+
+        .col-1-of-2{
+            text-align:center;
+        }
+    }
+
     .vision{
         text-align: right;
-    }
-    .vision-img{
-        border-radius: .5px;
-        display:inline-block;
-        width:75%;
-    }
+        margin-bottom: 2rem;
 
-    .vision-statement{
-        font-size:1.6rem;
-    }
-}
+        @media screen and (min-width:700px){
+            margin-bottom: 0;
+        }
 
-.section-contributions{
-    background-color: $color-orange-light;
-    padding:5rem 0;
-    text-align:center;
-    font-size: 2.2rem;
-    color:#04172A;
-    position: relative;
-    z-index:-2;
+        &-img{
+            border-radius: .5px;
+            display:inline-block;
+            width:75%;
+    
+            @media only screen and (min-width: 700px){
+                width: 90%;
+            }
+        }
 
-    [class^="col-"]:not(:last-child){
-        margin-bottom: 2.5rem;
-    }
-
-    &::after{
-
-        content: 'Enactus FUTA';
-        display:inline-block;
-        color:rgba(4, 23, 42, .1);
-        font-size: 6rem;
-        // line-break: auto;
-        position: absolute;
-        top:50%;
-        left: 50%;
-        opacity: .5;
-        transform: translate(-50%, -50%);
-        font-weight:400;
-    }
-    .row{
-        z-index: -9;
-    }
-}
-
-.contributions__stats--details{
-    font-weight: 400;  
-    color:rgba(4, 23, 42, 0.6);
-    font-size: 2rem;
-
-}
-
-.section-values{
-    .value__heading{
-        padding:2rem 0;
-        background: rgba(254, 217, 116, 0.25);
-        border: 1px solid #F4F4F4;
-        width:50%;
-    }
-
-    .value__details{
-        background-color:rgba(244, 244, 244, 0.5);
-        font-size:1.6rem;
-        color: rgba(4, 23, 42, 0.8);
-        width: 100%;
-    }
-
-    .contain{
-        padding:3rem 0;
-        width: 90%;
-        margin-left: 3rem;
-    }
-
-    .value-image{
-        width:100%;
-    }
-
-    .value-statement{
-
-        span{
-            font-weight:700;
-            color:$color-orange;
+        &-statement{
+            font-size:1.6rem;
+    
+            @media only screen and (min-width:500px){
+                font-size: 2rem;
+            }
         }
     }
 }
 
+.contribution--skew {
+    background-color: rgba(254, 195, 34, 0.25);
+    padding: 7rem 0;
+    position: relative;
+    color: $color-blue;
+    margin-top: 6rem;
+
+    @media only screen and (min-width:650px) {
+        transform: skewY(-2deg);
+        margin-top: 9rem;
+    }
+
+    @media only screen and (min-width:700px) {
+        margin-top: 9rem;
+    }
+
+    &::after {
+        content: 'Enactus Futa';
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        font-size: 7rem;
+        text-align: center;
+        margin: auto;
+        color: rgba(4, 23, 42, 0.068);
+        z-index: -1;
+
+        @media only screen and (min-width:450px) {
+            font-size: 9rem;
+        }
+
+        @media only screen and (min-width:650px) {
+            font-size: 10rem;
+            max-width: 100rem;
+            width: 100%;
+            transform: translate(-50%, -50%) skewY(2deg);
+        }
+
+        @media only screen and (min-width:900px) {
+            font-size: 12rem;
+        }
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+
+        @media only screen and (min-width:650px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+
+    .block-skew{
+
+        @media only screen and (min-width:650px) {
+            transform: skewY(2deg);
+        }
+
+    }
+}
+
+.section-mission{
+
+    @media only screen and (min-width:700px){
+        .mission{
+            width: 100%;
+            max-width: 85rem;
+            margin: auto;
+        }
+    }
+}
+
+.section-values{
+
+    .value{
+
+        &__heading{
+            padding:2rem 0;
+            background: rgba(254, 217, 116, 0.25);
+            border: 1px solid #F4F4F4;
+            width:50%;
+        }
+
+        &__details{
+            background-color:rgba(244, 244, 244, 0.5);
+            font-size:1.6rem;
+            color: rgba(4, 23, 42, 0.8);
+            width: 100%;
+        
+            @media only screen and (min-width:750px){
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap:2rem;
+            }
+        }
+
+        &-image{
+            width:100%;
+        
+            @media only screen and (min-width: 450px){
+                display: none;
+            }
+        
+            @media only screen and (min-width:750px){
+                width:40%;
+                max-width: 300px;
+                display: inline-block;
+            }
+        }
+
+        &-statement{
+            span{
+                font-weight:700;
+                color:$color-orange;
+            }
+        }
+    }
+  
+    .contain{
+        padding:3rem 0;
+        width: 90%;
+        margin-left: 3rem;
+
+        @media only screen and (min-width:750px){
+            width: 60%;    
+        }
+    }
+
+}
+
 .section-team{
+
     text-align:center;
+
+    @media only screen and (min-width: 700px){
+        .row{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+    
+            [class^="col"]{
+                width:30%;
+            }
+            [class^="col-"]:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
     [class^="col-"]:not(:last-child){
         margin-bottom: 2rem;
     }
 }
 
 .profile{
+
+    &-img{
+        max-width: 190px;
+    }
 
     &__details{
         margin-top:1rem;
@@ -128,11 +242,4 @@
             color:rgba(4, 23, 42, 0.6);
         }
     }
-}
-.cartoon{
-    margin:auto;
-    width:12rem;
-    height:12rem;
-    border: 0.6px solid rgba(254, 217, 116, 0.25);
-    border-radius: 50%;
 }

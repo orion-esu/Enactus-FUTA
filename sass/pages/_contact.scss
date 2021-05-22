@@ -1,5 +1,5 @@
 .contact-us{
-    max-width: 95rem;
+    max-width: 100rem;
     margin: auto;
 }
 
@@ -28,6 +28,10 @@
         color: currentColor;
         display: block;
     }
+
+    [class*="--text"] {
+        font-weight: 400;
+    }
 }
 
 .contact__address--description {
@@ -38,10 +42,6 @@
 
 .contact-num>* {
     margin-bottom: .5rem;
-}
-
-[class*="text"] {
-    font-weight: 400;
 }
 
 .con {
@@ -59,6 +59,9 @@
 
 .form {
 
+    &-det{
+        margin: auto;
+    }
     &-group {
         &:not(:last-child) {
             margin-bottom: 2rem;
@@ -106,6 +109,7 @@
     }
 
     &-btn{
+       
         max-width: 18rem;
         width: 100%;
         border: none;
@@ -115,11 +119,16 @@
         color:rgba(4, 23, 42, 0.8);
         box-shadow: rgba(254,194,34, 0.11);
         cursor: pointer;
-        background: #FEC222;
+        background-color: rgba(254, 194, 34, .8);
         transition: all .3s ease;
         text-align: center;
         display: block;
         margin: auto;
+
+        @media only screen and (min-width:500px){
+            max-width: 40rem;
+            width: 100%;
+        }
 
         &:hover{
             transform: scale(1.05);

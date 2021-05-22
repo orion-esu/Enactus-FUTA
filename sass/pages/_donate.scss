@@ -18,6 +18,10 @@
 .form-details{
     max-width: 60rem;
 
+    @media only screen and (min-width:700px){
+       margin-left: 5rem;
+    }
+
     &__radio-label{
         display: inline-flex;
         align-items: center;
@@ -128,7 +132,7 @@
     padding: 1.2rem 1rem;
     border-radius: 5px;
     border: none;
-    max-width: 40rem;
+    max-width: 18rem;
     width: 90%;
     color: $color-blue;
     font-size: 1.6rem;
@@ -136,6 +140,11 @@
     background-color: $color-orange;
     outline: 2px solid transparent;
     transition: all .1s ease;
+
+    @media only screen and (min-width:600px){
+        max-width: 40rem;
+        width: 90%;
+    }
 
     &:hover{
         background-color: $color-white;

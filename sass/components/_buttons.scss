@@ -7,11 +7,10 @@
         border-radius: 5px;
         background-color: rgba(254, 195, 34, .8);
         padding: 1.2rem 4rem;
-        // display: inline-block;
     }
 
     &-clr {
-        font-size: calc(#{$font-smallest} + .2rem);
+        font-size: $font-smallest;
         transform: perspective(1px);
         backface-visibility: hidden;
         border-radius: 5px;
@@ -53,7 +52,6 @@
         background-color: rgba(254, 195, 34, .8);
         padding: 1.2rem 2rem;
         font-size: 1.6rem;
-
     }
 
     &-newsletter {
@@ -62,7 +60,7 @@
         padding: 1.2rem 6rem;
         font-weight: 500;
         border: none;
-        background-color: rgba(254, 195, 34, 1);
+        background-color: rgba(254, 195, 34, .8);
         color: $color-blue;
         cursor: pointer;
         width: 100%;
@@ -78,7 +76,7 @@
         padding: 1.2rem 6rem;
         font-weight: 500;
         border: none;
-        background-color: rgba(254, 195, 34, 1);
+        background-color: rgba(254, 195, 34, .9);
         color: $color-blue;
         cursor: pointer;
         width: 100%;
@@ -102,10 +100,7 @@
     }
 
     &-card {
-        // padding: 1.2rem 4rem;
         font-size: 1.6rem;
-        // border-radius: 5px;
-        // color:rgba(4, 23, 42, 0.8);
     }
 
     &-aside{
@@ -118,9 +113,6 @@
         border-radius: 5px;
         background-color: rgba(254, 195, 34, 1);
         padding: 1.2rem 4rem;
-
-        // max-width: 35ch;
-        // margin: auto;
     }
 
     &-about,

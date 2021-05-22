@@ -47,6 +47,11 @@
     &__hamburger {
         display: none;
     }
+
+    .btn:visited,
+    .btn:link{
+        padding: 1rem 2.5rem;
+    }
 }
 
 .hov-er {
@@ -78,7 +83,6 @@
         position: fixed;
         background-color: $color-brown;
         width: 50%;
-        // max-width: 500px;
         right: 0;
         top: 10vh;
         height: 100vh;
@@ -106,16 +110,8 @@
         .btn-clr{
             opacity: 0;
         }
-    }
 
-    .btn-clr {
-        // padding: 1.2rem 4rem;
-        // font-size: calc(#{$font-smallest} + .2rem);
-        // transform: perspective(1px);
-        // backface-visibility: hidden;
-        // position: relative;
-
-         
+       
     }
 
     .nav__item li{
