@@ -30,22 +30,19 @@
 
             <div class="nav">
                 <div class="nav__logo">
-
                     <a href="index.html">
-                        <img src="./Images/Logo/336456.svg" alt="Enactus Futa Logo">
+                        <img src="./Images/Logo/336456.svg" alt="Enactus Futa Logo" class="nav__logo-img">
+                        <span class="nav__logo-text">FUTA</span>
                     </a>
-
-                    <!-- <span class="futa">Futa</span> -->
                 </div>
 
                 <ul class="nav__item">
-                    <li class="nav__list hov-er"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__list hov-er"><a href="about-us.html" class="nav__link">About Us</a></li>
-                    <li class="nav__list hov-er"><a href="projects.html" class="nav__link">Projects</a></li>
-                    <li class="nav__list hov-er"><a href="gallery.html" class="nav__link">Gallery</a></li>
-                    <li class="nav__list hov-er"><a href="contact-us.html" class="nav__link">Contact Us</a></li>
+                    <li class="nav__list"><a href="index.html" class="nav__link hov-er">Home</a></li>
+                    <li class="nav__list"><a href="about-us.html" class="nav__link hov-er">About Us</a></li>
+                    <li class="nav__list"><a href="projects.html" class="nav__link hov-er">Projects</a></li>
+                    <li class="nav__list"><a href="gallery.html" class="nav__link hov-er">Gallery</a></li>
+                    <li class="nav__list"><a href="contact-us.html" class="nav__link hov-er">Contact Us</a></li>
                     <a href="donate.html" class="btn btn-clr btn-animate">Donate Now</a>
-                    <!--   -->
                 </ul>
 
                 <div class="nav__hamburger">
@@ -73,7 +70,6 @@
 
                 <img src="./Images/Contact/header-sm.png" alt="Heading Image" class="heading-image">
             </picture>
-            <!-- </picture> -->
 
             <figcaption class="heading__details">
                 <h2 class="heading__details-title" id="con">Contact Us</h2>
@@ -89,7 +85,7 @@
 
         <div class="container">
 
-            <div class="contact-us">
+            <div class="contact-us u-margin-bottom-m">
 
                 <h2 class="contact-us__title u-margin-bottom-l">Contact Us</h2>
 
@@ -97,7 +93,7 @@
 
                     <div class="contact-num">
                         <i class="fas fa-phone-alt con"></i>
-                        <h3 class="contact-num__text u-margin-top-sm">Phone Number</h3>
+                        <h3 class="contact-num--text u-margin-top-sm">Phone Number</h3>
                         <p class="contact-num--digits">
                             <a href="tel:+234 905 286 8337" class="contact-us__details--link">+234 905 286 8337</a>
                             <a href="tel:+234 903 642 9674" class="contact-us__details--link">+234 903 642 9674</a>
@@ -135,12 +131,12 @@
 
     </section>
 
-    <section class="form">
+    <section class="form u-margin-top-m">
         <div class="container">
 
-            <form action="#" class="form-details">
+            <form action="#" class="form-det">
                 <div class="u-margin-bottom-s">
-                    <h2 class="form__title">Leave a Message</h2>
+                    <h2 class="form__title u-margin-bottom-m">Leave a Message</h2>
                 </div>
 
                 <div class="form-group">
@@ -150,22 +146,22 @@
                 <div class="form-group">
                     <label for="email" class="form__label">Email Address</label>
                     <input type="tel" name="tel" id="" class="form__input" placeholder="Email Address" required>
-                    <!-- <input type="email" name="email" class="form__input" placeholder="Email Address" required> -->
                 </div>
                 <div class="form-group">
                     <label for="" class="form__label">Description</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form__input" placeholder="We'll love to hear from you!" required></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="form__input"
+                        placeholder="We'll love to hear from you!" required></textarea>
                 </div>
 
                 <div class="u-margin-top-m">
-                    <button class="form-btn">Send Message</button>
+                    <button class="form-btn btn-clr">Send Message</button>
                 </div>
             </form>
         </div>
 
     </section>
 
-    <footer class="u-margin-top-m">
+    <footer class="u-margin-top-l">
 
         <div class="container">
 
@@ -173,7 +169,7 @@
 
                 <div class="footer__section">
                     <div class="footer__section-1">
-                        <div class="footer-logo">
+                        <div class="footer-logo u-margin-bottom-sm">
                             <img src="./Images/Logo/336456.svg" alt="Enactus Futa Logo" class="footer-logo--img">
                             <span class="footer-logo--text">FUTA</span>
                         </div>
@@ -185,7 +181,7 @@
                         </p>
                         <span class="footer__section-1-text">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p class="">
+                            <p class="descrip">
                                 <a href="https://goo.gl/maps/XqA9HM467DEuaDuv9" target="_blank"
                                     rel="noopener noreferrer" class="footer__link">Federal University of Technology,
                                     Akure, Ondo State.</a>
@@ -197,7 +193,7 @@
                     <div class="footer__section-2">
                         <a href="" class="footer__link">Home <span class="dash">|</span> </a>
                         <a href="" class="footer__link">Our Vision <span class="dash">|</span> </a>
-                        <a href="" class="footer__link">Projects <span class="dash">|</span> </a>
+                        <a href="projects.html" class="footer__link">Projects <span class="dash">|</span> </a>
                         <a href="" class="footer__link">Meet the team <span class="dash">|</span> </a>
                         <a href="donate.html" class="footer__link">Donate</a>
                     </div>
@@ -205,8 +201,9 @@
 
                 <div class="footer__section">
                     <div class="footer__section-3">
-                        <h3>About Us</h3>
-                        <p class="footer-description">Enactus is an international nonprofit organization dedicated to inspiring student to
+                        <h3 class="u-margin-bottom-sm">About Us</h3>
+                        <p class="footer-description">Enactus is an international nonprofit organization dedicated
+                            to inspiring student to
                             improve
                             the
                             world through entrepreneurial action. we are a branch in Federal University of
@@ -216,7 +213,7 @@
 
                     <div class="footer__section-4">
                         <h3>Connect With Us Elsewhere</h3>
-                        <div class="icons">
+                        <div class="icons u-margin-top-sm">
                             <a href="" class="icons__link">
                                 <i class="fab fa-facebook-square"></i>
                             </a>
@@ -231,12 +228,12 @@
                             </a>
                         </div>
 
-                        <div class="footer__newsletter">
-                            <h3 class="newsletter__title">Stay Updated</h3>
-                            <form action="" class="newsletter__form">
-                                <input type="email" name="" id="" placeholder="Enter email address">
-                                <!-- <button class="">Subscribe</button> -->
-                                <a href="#" class="btn btn-newsletter">Subscribe</a>
+                        <div class="footer__newsletter u-margin-top-s">
+                            <h3 class="newsletter__title u-margin-bottom-s">Stay Updated</h3>
+                            <form action="" class="footer__newsletter__form">
+                                <input type="email" name="" id="" placeholder="Enter email address"
+                                    class="footer__newsletter__form-input" required>
+                                <button class="btn btn-newsletter btn-clr">Subscribe</button>
                             </form>
                         </div>
 

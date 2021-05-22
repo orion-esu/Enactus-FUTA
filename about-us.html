@@ -32,7 +32,6 @@
                     <li class="nav__list"><a href="gallery.html" class="nav__link hov-er">Gallery</a></li>
                     <li class="nav__list"><a href="contact-us.html" class="nav__link hov-er">Contact Us</a></li>
                     <a href="donate.html" class="btn btn-clr btn-animate">Donate Now</a>
-                    <!--   -->
                 </ul>
 
                 <div class="nav__hamburger">
@@ -48,11 +47,24 @@
 
     <header class="header">
             <figure class="header__details">
-                <img src="./Images/About-Us/Rectangle 458-edited.png" alt="Enactus FUTA team" class="header__img">
-                <figcaption class="header__caption">
-                    <h2 class="heading-secondary">About Us</h2>
-                    <p class="paragraph">
-                        <a href="/index.html" class="paragraph-link">Home</a> &#8594; About Us
+                <picture>
+                    <source srcset="
+                                    ./Images/About-Us/header-img-md.png 817w,
+                                    ./Images/About-Us/header-img-l.png 1440w" 
+                                    
+                            sizes="
+                                    (min-width: 501px) 1440px,
+                                    (max-width: 500px) 817px,
+                                    100vw">
+    
+                    <img src="./Images/About-Us/header-img-md.png" alt="Heading Image" class="heading-image header-img">
+                </picture>
+
+                <figcaption class="heading__details">
+                    <h2 class="heading__details-title">About Us</h2>
+                    <p class="heading__details-description">
+                        <a href="/index.html" class="heading__details-link">Home</a>
+                        &rarr; About Us
                     </p>
                 </figcaption>
             </figure>
@@ -64,7 +76,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="col-1-of-2 u-margin-bottom-s">
+                    <div class="col-1-of-2">
                         <div class="vision">
                             <img src="/Images/About-Us/Rectangle4.png" alt="" class="vision-img">
                         </div>
@@ -78,37 +90,29 @@
             </div>
         </section>
 
-        <section class="section-contributions u-margin-top-m">
-            <div class="container">
-                <div class="row">
-                    <div class="col-1-of-3">
-                        <div class="contributions__stats">
-                            <h3 class="contributions__stats--title">10+</h3>
-                            <p class="contributions__stats--details">Communities Reached</p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="contributions__stats">
-                            <h3 class="contributions__stats--title">12+</h3>
-                            <p class="contributions__stats--details">Completed Projects</p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="contributions__stats">
-                            <h3 class="contributions__stats--title">5000+</h3>
-                            <p class="contributions__stats--details">Impacted Lives</p>
-                        </div>
-                    </div>
+        <section class="contribution--skew">
+            <div class="container flex">
+                <div class="contribution__block block-skew">
+                    <h3 class="contribution--value">10+</h3>
+                    <p class="contribution-name">Communities Reached</p>
+                </div>
+
+                <div class="contribution__block block-skew">
+                    <h3 class="contribution--value">12+</h3>
+                    <p class="contribution-name">Completed Projects</p>
+                </div>
+
+                <div class="contribution__block block-skew">
+                    <h3 class="contribution--value">50000+</h3>
+                    <p class="contribution-name">Impacted Lives</p>
                 </div>
             </div>
-
-            <!-- <p class="futa">Enactus<span> FUTA</span></p> -->
         </section>
 
-        <section class="section-mission u-margin-top-l">
+        <section class="section-mission u-margin-top-m">
             <div class="container">
                 <div class="mission">
-                    <h2 class="mission-title u-margin-bottom-s">Our Mission</h2>
+                    <h2 class="mission-title u-margin-bottom-m">Our Mission</h2>
                     <span class="mission-text u-margin-bottom-sm">
                         Engage the next generation of entrepreneurial leaders In The use Of innovation and business principles to improve the world.
                     </span>
@@ -121,7 +125,7 @@
             </div>
         </section>
 
-        <section class="section-values u-margin-top-s">
+        <section class="section-values u-margin-top-l">
             <div class="value__heading">
                 <h2 class="value__title container">
                     Our Values
@@ -129,7 +133,6 @@
             </div>
             <div class="col">
                 <div class="value__details">
-                    <!-- <div class="container"> -->
                         <div class="contain">
                             <p class="value-statement u-margin-bottom-sm">
                                 We live our values of integrity, passion, innovation and collaboration in all that we do.
@@ -145,7 +148,6 @@
                                 – student, academic and business leaders collaborating to create a better world.
                             </p>
                         </div>
-                    <!-- </div> -->
 
                     <div class="value-image">
                         <img src="/Images/About-Us/Rectangle 456.png" alt="" class="value-img">
@@ -159,10 +161,9 @@
             <div class="container">
                     <h2 class="team__title u-margin-bottom-m">Board of Directors</h2>
 
-                    <div class="team--lead u-margin-bottom-s">
+                    <div class="team--lead u-margin-bottom-m">
                         <figure class="profile">
-                            <!-- <img src="" alt="" class="profile-img"> -->
-                            <div class="cartoon"></div>
+                            <img src="./Images/About-Us/team-lead.png" alt="" class="profile-img">
                             <figcaption class="profile__details">
                                 <p class="profile__details--name">Ojeniyi Oluwatomisin Ifeladun</p>
                                 <p class="profile__details--position">Team Lead</p>
@@ -173,8 +174,7 @@
                     <div class="row u-margin-bottom-m">
                         <div class="col-1-of-3">
                             <figure class="profile">
-                                <!-- <img src="" alt="" class="profile-img"> -->
-                                <div class="cartoon"></div>
+                                <img src="/Images/About-Us/fin-sec.png" alt="" class="profile-img">
                                     <figcaption class="profile__details">
                                         <p class="profile__details--name">Omowaye Serah O</p>
                                         <p class="profile__details--position">Financial Secretary</p>
@@ -183,8 +183,7 @@
                         </div>
                         <div class="col-1-of-3">
                             <figure class="profile">
-                                <!-- <img src="" alt="" class="profile-img"> -->
-                                <div class="cartoon"></div>
+                                <img src="/Images/About-Us/tech-director.png" alt="" class="profile-img">
                                     <figcaption class="profile__details">
                                         <p class="profile__details--name">Udeh Ikenna Ebenezer</p>
                                         <p class="profile__details--position">Technical Director</p>
@@ -193,8 +192,7 @@
                         </div>
                         <div class="col-1-of-3">
                             <figure class="profile">
-                                <!-- <img src="" alt="" class="profile-img"> -->
-                                <div class="cartoon"></div>
+                                <img src="/Images/About-Us/team-sec.png" alt="" class="profile-img">
                                 <figcaption class="profile__details">
                                     <p class="profile__details--name">Nwankoro Chinonso</p>
                                     <p class="profile__details--position">Team Secretary</p>
@@ -205,8 +203,7 @@
                     <div class="row">
                         <div class="col-1-of-3">
                             <figure class="profile">
-                                <!-- <img src="" alt="" class="profile-img"> -->
-                                <div class="cartoon"></div>
+                                <img src="/Images/About-Us/welfare.png" alt="" class="profile-img">
                                 <figcaption class="profile__details">
                                     <p class="profile__details--name">Omotayo Oluwatoyin Eunice</p>
                                     <p class="profile__details--position">Welfare Director</p>
@@ -215,8 +212,7 @@
                         </div>
                         <div class="col-1-of-3">
                             <figure class="profile">
-                                <!-- <img src="" alt="" class="profile-img"> -->
-                                <div class="cartoon"></div>
+                                <img src="/Images/About-Us/protocol.png" alt="" class="profile-img">
                                 <figcaption class="profile__details">
                                     <p class="profile__details-name">Jemirin Opeyemi</p>
                                     <p class="profile__details--position">Protocol Officer</p>
@@ -225,8 +221,7 @@
                         </div>
                         <div class="col-1-of-3">
                             <figure class="profile">
-                                <!-- <img src="" alt="" class="profile-img"> -->
-                                <div class="cartoon"></div>
+                                <img src="/Images/About-Us/programs-dir.png" alt="" class="profile-img">
                                 <figcaption class="profile__details">
                                     <p class="profile__details--name">Azigbo Solomon</p>
                                     <p class="profile__details--position">Programs Director</p>
@@ -310,7 +305,6 @@
                             <form action="" class="footer__newsletter__form">
                                 <input type="email" name="" id="" placeholder="Enter email address" class="footer__newsletter__form-input" required>
                                 <button class="btn btn-newsletter">Subscribe</button>
-                                <!-- <a href="#" class="btn btn-newsletter">Subscribe</a> -->
                             </form>
                         </div>
 

@@ -30,20 +30,18 @@
             <div class="nav">
                 <div class="nav__logo">
                     <a href="index.html">
-                        <img src="./Images/Logo/336456.svg" alt="Enactus Futa Logo">
+                        <img src="./Images/Logo/336456.svg" alt="Enactus Futa Logo" class="nav__logo-img">
+                        <span class="nav__logo-text">FUTA</span>
                     </a>
-
-                    <!-- <span class="futa">Futa</span> -->
                 </div>
 
                 <ul class="nav__item">
-                    <li class="nav__list hov-er"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__list hov-er"><a href="about-us.html" class="nav__link">About Us</a></li>
-                    <li class="nav__list hov-er"><a href="pages.html" class="nav__link">Projects</a></li>
-                    <li class="nav__list hov-er"><a href="gallery.html" class="nav__link">Gallery</a></li>
-                    <li class="nav__list hov-er"><a href="contact-us.html" class="nav__link">Contact Us</a></li>
+                    <li class="nav__list"><a href="index.html" class="nav__link hov-er">Home</a></li>
+                    <li class="nav__list"><a href="about-us.html" class="nav__link hov-er">About Us</a></li>
+                    <li class="nav__list"><a href="projects.html" class="nav__link hov-er">Projects</a></li>
+                    <li class="nav__list"><a href="gallery.html" class="nav__link hov-er">Gallery</a></li>
+                    <li class="nav__list"><a href="contact-us.html" class="nav__link hov-er">Contact Us</a></li>
                     <a href="donate.html" class="btn btn-clr btn-animate">Donate Now</a>
-                    <!--   -->
                 </ul>
 
                 <div class="nav__hamburger">
@@ -57,15 +55,29 @@
 
     </nav>
 
+    <header class="heading">
+        <figure class="heading__image">
+            <picture>
+                <source srcset="./Images/Projects/header-img.s.png 375w,
+                                    ./images/Projects/header-img.md.png 973w,
+                                    ./Images/Projects/header-img.bg.png 1440w" sizes="
+                                    (min-width:600px) 1440px,
+                                    (min-width:375px) 973px,
+                                    (max-width:375px) 375px,
+                                    100vw">
 
-    <header class="project-header">
-        <!-- <figure> -->
-        <picture>
-            <source srcset="images/Projects/header-img.s.png" media="(max-width:375px)">
-            <source srcset="images/Projects/header-img.md.png" media="(max-width:900px)">
-            <img src="./Images/Projects/header-img.bg.png" alt="" class="">
-        </picture>
-        <!-- </figure> -->
+
+                <img src="./Images/Projects/header-img.s.png" alt="Heading Image" class="heading-image">
+            </picture>
+
+            <figcaption class="heading__details">
+                <h2 class="heading__details-title">Projects</h2>
+                <p class="heading__details-description">
+                    <a href="/index.html" class="heading__details-link">Home</a>
+                    &rarr; Projects
+                </p>
+            </figcaption>
+        </figure>
     </header>
 
     <main>
@@ -90,7 +102,7 @@
                             </p>
 
                             <div class="u-center-text u-margin-top-m">
-                                <a href="donate.html" class="btn btn-card">Donate Now</a>
+                                <a href="donate.html" class="btn btn-clr btn-card">Donate Now</a>
                             </div>
                         </div>
                     </div>
@@ -108,7 +120,7 @@
                             </p>
 
                             <div class="u-center-text u-margin-top-m">
-                                <a href="donate.html" class="btn btn-card">Donate Now</a>
+                                <a href="donate.html" class="btn btn-clr btn-card">Donate Now</a>
                             </div>
                         </div>
                     </div>
@@ -126,7 +138,7 @@
                             </p>
 
                             <div class="u-center-text u-margin-top-m">
-                                <a href="donate.html" class="btn btn-card">Donate Now</a>
+                                <a href="donate.html" class="btn btn-clr btn-card">Donate Now</a>
                             </div>
                         </div>
                     </div>
@@ -137,7 +149,7 @@
 
         <section class="past-projects u-margin-top-m">
             <div class="container">
-                <h2 class="project-title u-center-text u-margin-bottom-m">Past Projects</h2>
+                <h2 class="past-project u-center-text u-margin-bottom-m">Past Projects</h2>
 
                 <div class="row u-margin-bottom-m">
                     <div class="col-1-of-2 order">
@@ -152,7 +164,10 @@
                     <div class="col-1-of-2">
                         <div class="util">
                             <h3 class="title u-margin-bottom-sm">Project <span class="title-span">T.R.E.E</span></h3>
-                            <p class="details">T.R.E.E an acronym coined from Transform, Renovate, Educate and Empower, was a project geared towards renovating St. Andrewa Anglican Primary School, located in Arakale Community, Isinkan. Enactus FUTA realized that it was much more than renovating the school so the team decided to adopt the school.</p>
+                            <p class="details">T.R.E.E an acronym coined from Transform, Renovate, Educate and Empower,
+                                was a project geared towards renovating St. Andrewa Anglican Primary School, located in
+                                Arakale Community, Isinkan. Enactus FUTA realized that it was much more than renovating
+                                the school so the team decided to adopt the school.</p>
                             <div class="u-margin-top-sm">
                                 <a href="" class="link">View Gallery &rarr;</a>
                             </div>
@@ -172,7 +187,11 @@
                     <div class="col-1-of-2 flex">
                         <div class="util">
                             <h3 class="title u-margin-bottom-sm">Project <span class="title-span">Bubbue</span></h3>
-                            <p class="details">The project provided an avenue for the empowerment of individuals in the community willing to offer affordable laundry services but lacks the capital often associated with setting up standard laundry business outlets. While this would serve as an alternative source of income for many, it will also usher in accessible and affordable laundry service for the community members.</p>
+                            <p class="details">The project provided an avenue for the empowerment of individuals in the
+                                community willing to offer affordable laundry services but lacks the capital often
+                                associated with setting up standard laundry business outlets. While this would serve as
+                                an alternative source of income for many, it will also usher in accessible and
+                                affordable laundry service for the community members.</p>
                             <div class="u-margin-top-sm">
                                 <a href="" class="link">View Gallery &rarr;</a>
                             </div>
@@ -192,7 +211,10 @@
                     <div class="col-1-of-2">
                         <div class="util">
                             <h3 class="title u-margin-bottom-sm">Project <span class="title-span">Toilet</span></h3>
-                            <p class="details">The public toilet in a community surrounding the Federal University of Technoloy, Akure, after several attempts had been made by individuals, the Enactus body, FUTA chapter decided to take it upon ourself to curb this persistent problem. With your help, it was a successful project.</p>
+                            <p class="details">The public toilet in a community surrounding the Federal University of
+                                Technoloy, Akure, after several attempts had been made by individuals, the Enactus body,
+                                FUTA chapter decided to take it upon ourself to curb this persistent problem. With your
+                                help, it was a successful project.</p>
                             <div class="u-margin-top-sm">
                                 <a href="" class="link">View Gallery &rarr;</a>
                             </div>
@@ -207,8 +229,11 @@
                     </div>
                     <div class="col-1-of-2">
                         <div class="util">
-                            <h3 class="title u-margin-bottom-sm">Project <span class="title-span">Mosquito Repellant</span></h3>
-                            <p class="details">Malaria has been a major death factor since the inception of the illness. In the movement to bring to an end this deadly sickness, Enactus FUTA played their role  by distributing mosquito repellant facilities to surrounding communities in Akure.</p>
+                            <h3 class="title u-margin-bottom-sm">Project <span class="title-span">Mosquito
+                                    Repellant</span></h3>
+                            <p class="details">Malaria has been a major death factor since the inception of the illness.
+                                In the movement to bring to an end this deadly sickness, Enactus FUTA played their role
+                                by distributing mosquito repellant facilities to surrounding communities in Akure.</p>
                             <div class="u-margin-top-sm">
                                 <a href="" class="link">View Gallery &rarr;</a>
                             </div>
@@ -227,7 +252,7 @@
 
                 <div class="footer__section">
                     <div class="footer__section-1">
-                        <div class="footer-logo u-margin-bottom-s">
+                        <div class="footer-logo u-margin-bottom-sm">
                             <img src="./Images/Logo/336456.svg" alt="Enactus Futa Logo" class="footer-logo--img">
                             <span class="footer-logo--text">FUTA</span>
                         </div>
@@ -239,7 +264,7 @@
                         </p>
                         <span class="footer__section-1-text">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p class="">
+                            <p class="descrip">
                                 <a href="https://goo.gl/maps/XqA9HM467DEuaDuv9" target="_blank"
                                     rel="noopener noreferrer" class="footer__link">Federal University of Technology,
                                     Akure, Ondo State.</a>
@@ -251,7 +276,7 @@
                     <div class="footer__section-2">
                         <a href="" class="footer__link">Home <span class="dash">|</span> </a>
                         <a href="" class="footer__link">Our Vision <span class="dash">|</span> </a>
-                        <a href="/projects.html" class="footer__link">Projects <span class="dash">|</span> </a>
+                        <a href="projects.html" class="footer__link">Projects <span class="dash">|</span> </a>
                         <a href="" class="footer__link">Meet the team <span class="dash">|</span> </a>
                         <a href="donate.html" class="footer__link">Donate</a>
                     </div>
@@ -260,7 +285,8 @@
                 <div class="footer__section">
                     <div class="footer__section-3">
                         <h3 class="u-margin-bottom-sm">About Us</h3>
-                        <p class="footer-description">Enactus is an international nonprofit organization dedicated to inspiring student to
+                        <p class="footer-description">Enactus is an international nonprofit organization dedicated
+                            to inspiring student to
                             improve
                             the
                             world through entrepreneurial action. we are a branch in Federal University of
@@ -269,8 +295,8 @@
                     </div>
 
                     <div class="footer__section-4">
-                        <h3 class="u-margin-bottom-sm">Connect With Us Elsewhere</h3>
-                        <div class="icons">
+                        <h3>Connect With Us Elsewhere</h3>
+                        <div class="icons u-margin-top-sm">
                             <a href="" class="icons__link">
                                 <i class="fab fa-facebook-square"></i>
                             </a>
@@ -285,12 +311,12 @@
                             </a>
                         </div>
 
-                        <div class="footer__newsletter">
-                            <h3 class="newsletter__title">Stay Updated</h3>
-                            <form action="" class="newsletter__form">
-                                <input type="email" name="" id="" placeholder="Enter email address">
-                                <!-- <button class="">Subscribe</button> -->
-                                <a href="#" class="btn btn-newsletter">Subscribe</a>
+                        <div class="footer__newsletter u-margin-top-s">
+                            <h3 class="newsletter__title u-margin-bottom-s">Stay Updated</h3>
+                            <form action="" class="footer__newsletter__form">
+                                <input type="email" name="" id="" placeholder="Enter email address"
+                                    class="footer__newsletter__form-input" required>
+                                <button class="btn btn-clr btn-newsletter">Subscribe</button>
                             </form>
                         </div>
 
@@ -302,6 +328,7 @@
         </div>
 
     </footer>
+
     <script src="/js/script.js" async defer></script>
 </body>
 
