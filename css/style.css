@@ -856,7 +856,7 @@ footer {
       .section-team .row [class^="col-"]:not(:last-child) {
         margin-bottom: 0; } }
   .section-team [class^="col-"]:not(:last-child) {
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem; }
 
 .profile-img {
   max-width: 190px; }
@@ -1465,7 +1465,8 @@ footer {
   .contact__number, .contact__email {
     position: relative; }
   .contact .span-line {
-    max-width: 40rem;
+    max-width: 30rem;
+    width: 100%;
     height: .5rem;
     text-align: center;
     margin: auto;
